@@ -1,27 +1,17 @@
-total_bill_str = '124.54'
-num_of_people_str = '5'
-percentage_str = '12'
+import random
 
-print('Welcome to the tip calculator.')
-print('What was the total bill? ')
-total_bill = float(total_bill_str)
-print('How many people to split the bill? ')
-num_of_people = int(num_of_people_str)
-print("what percentage? ")
-percentage = float(percentage_str)
-price = (total_bill * (1+percentage/100)) / num_of_people
-float_str = "{:.4f}".format(price)
-full_str = "each person should pay " + float_str
-print(full_str)
-print("hello"[2])
 
+
+my_dict = {}
 a = 5
-b = 2
-c = 7
-mystr = f"{a} + {b} = {c}"
-print(mystr)
-
-
-
-
+b = 8
+for i in range(a,b+1):
+    my_dict[i] = 0
+    
+for i in range(100000):
+    rnd = random.randint(a,b)
+    my_dict[rnd] += 1
+        
+for j in range(a,b+1):
+    print(f"{j} exists {my_dict[j]} times")
 

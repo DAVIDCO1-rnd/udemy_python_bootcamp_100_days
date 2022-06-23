@@ -1,6 +1,10 @@
 import random
 
 
+david = [5,6,7]
+david.append("yoni")
+print(david)
+
 
 my_dict = {}
 a = 5

@@ -15,8 +15,11 @@ print(img_grayscale.shape)
 THRESH = 127
 img_binary_data = cv2.threshold(img_grayscale, THRESH, 255, cv2.THRESH_BINARY)
 img_binary = img_binary_data[1]
-cv2.imshow("binary", img_binary)
-cv2.waitKey(0)
+
+plt.imshow(img_grayscale)
+plt.show()
+#cv2.imshow("binary", img_binary)
+#cv2.waitKey(0)
 
 #plt.hist(img_binary.ravel(), bins=20)
 #plt.show()
